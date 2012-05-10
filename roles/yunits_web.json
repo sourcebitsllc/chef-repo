@@ -1,0 +1,15 @@
+{
+  "name": "yunits_web",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "description": "",
+  "run_list": [
+    "recipe[git]",
+    "recipe[nginx]",
+    "recipe[application]"
+  ],
+  "override_attributes": {
+  }
+}

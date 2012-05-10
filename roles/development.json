@@ -1,0 +1,14 @@
+{
+ "name": "development",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "app_environment": "development"
+  },
+  "description": "development environment role",
+  "run_list": [
+
+  ],
+  "override_attributes": {
+  }
+}

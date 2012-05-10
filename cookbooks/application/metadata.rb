@@ -14,8 +14,9 @@ recipe           "application::php", "Deploys a PHP application specified in a d
 recipe           "application::rails", "Deploys a Rails application specified in a data bag with the deploy_revision resource"
 recipe           "application::tomcat", "Sets up the deployed Java application with Tomcat as the servlet container"
 recipe           "application::unicorn", "Sets up the deployed Rails application with Unicorn as the web server"
+recipe           "application::yunits_web", "Sets up yunits web rails app with nginx proxy_pass conf"
 
-%w{ runit unicorn apache2 passenger_apache2 tomcat gunicorn apache2 php }.each do |cb|
+%w{ runit unicorn apache2 passenger_apache2 nginx tomcat gunicorn apache2 php }.each do |cb|
   depends cb
 end
 

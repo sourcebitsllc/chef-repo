@@ -12,6 +12,7 @@
     "unicorn": ">= 0.0.0",
     "apache2": ">= 0.0.0",
     "passenger_apache2": ">= 0.0.0",
+    "nginx": ">= 0.0.0",
     "tomcat": ">= 0.0.0",
     "gunicorn": ">= 0.0.0",
     "php": ">= 0.0.0",
@@ -41,7 +42,8 @@
     "application::php": "Deploys a PHP application specified in a data bag with the deploy_revision resource",
     "application::rails": "Deploys a Rails application specified in a data bag with the deploy_revision resource",
     "application::tomcat": "Sets up the deployed Java application with Tomcat as the servlet container",
-    "application::unicorn": "Sets up the deployed Rails application with Unicorn as the web server"
+    "application::unicorn": "Sets up the deployed Rails application with Unicorn as the web server",
+    "application::yunits_web": "Sets up yunits web rails app with nginx proxy_pass conf"
   },
   "version": "0.99.14"
 }

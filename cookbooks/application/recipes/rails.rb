@@ -19,8 +19,8 @@
 
 app = node.run_state[:current_app]
 
-# make the _default chef_environment look like the Rails production environment
-rails_env = (node.chef_environment =~ /_default/ ? "production" : node.chef_environment)
+# make the _default chef_environment look like the Rails development [was production] environment
+rails_env = (node.chef_environment =~ /_default/ ? "development" : node.chef_environment)
 node.run_state[:rails_env] = rails_env
 
 ###
@@ -150,6 +150,7 @@ if app["memcached_role"]
     )
   end
 end
+Chef::Log.info("Environment : #{node.chef_environment}")
 
 ## Then, deploy
 deploy_revision app['id'] do
