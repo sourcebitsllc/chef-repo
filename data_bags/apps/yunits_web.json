@@ -8,8 +8,6 @@
             ]
   },
 
-  "database_master_role": [ "yunits_web_database_master" ],
-
   "api_server_url":"http://kosmos-api-dev.sourcebits.com:4567",
 
   "rails_port" : "3000",
@@ -35,20 +33,11 @@
   },
 
   "force": {
-    "development" : true 
+    "development" : false 
   },
 
   "migrate" : {
     "development" : false
-  },
-
-  "databases": {
-    "development": {
-      "reconnect": "true",
-      "encoding": "utf8",
-      "adapter": "sqlite3",
-      "database": "db/development.sqlite3"
-    }
   },
 
   "deploy_key" : "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAvhjCq+TK7hNXLizOLNT2K8F7a5qL5ErVoxJxiJUZfPSF90YN\n/stlFxbeI0k0RgG4c5RmQ8SF5RBNo32UA9bE6y9HFS+gWgNW9kxkYB/QhsWBWJna\n5w5A8V8PB5OSrWnr2aDBTgScWfs+CXbb8yCDXbBQlMa3jNJ50WWqZrC4rGzggw+k\nkBHFIj1+Y3ZAyTv/P+tjfsJbt/9GglWlZT95fGYgMtMOPreWAwOsXWdiBF5RDd+p\noLgjZaD/Eu1lXiAjZoSU2xrqtLkwUOAxj+ZLbwEcV6UaYdeiqwh69Jx10A5su6G1\nccA7cQblQ4UbfD6bKORWADgpaYr6VAbH7nPMwwIDAQABAoIBAQCcKxtCvCM6kwj8\nFjMLAal7KOiL7dsfIZuA7JX47wSRcxDbo+G7gLz7yv2TX4BiQueVjES3R6v4Evy1\nY2VGAhqkW6K59PZ2/Gdk0D1l+r0E+xzX/Q2o5DzWDpH6V3IYpPvtPfOQdJk+EvlU\nLSFlC0DgpwiMMPR57C/Hpw3mbyhH/X80Z4bPiE7uEMEyOIqXY4QUaAoMQc86FXoz\nxWJ1Ns9FPRyA/q1XAT9VeWmL26QsNTt8bMmwHNZzGrIo/9SD4RjjM7Rkw73BK+gV\nLQYmLP4f6m01qOmSFZSci/eFQSKPuN8lrhS7nz4Im7CyhsVvZhZdl+VYDXFvE36L\nW4nOgTuBAoGBAOjxOVH6iTycjgLci//DCi9FVDx2NkdNTOAAirKb5LCLqFSppmIr\nymBPwDie2fXReCV0aYg42S5I9eofSYmliLZsX+EaJmzdxbJOPYkt9zg8vigkUn/u\n0BGkLBiH1py0jlm5dRxpb9ldSZFN8ht1WCQ9emgddrGi1kZAZ8Quc+qHAoGBANDp\n05tHyVvCKxyRhQKkI9XziKEKeARO1InqP7KG5SXs9GkGWDI/SU8nd8xF8f8kjUaF\n3sijaIzPccVIABNkWOfSS4qhuYULK5ffFUCZEzD1DgSOgpyacQ3IjQQ8RT2GfJR/\ntwJG+5ZOC2pCJgUEypfEeHIvMzv++sgqn+csW27lAoGAJH8G2A1EyzZMGa6sUJoi\nUl2uYPq0bl9yF/Z9xJYgMnjvGrSp2N+7iXN1Tmm1BIqZJGUk0670eAf+X3wfbW1+\nCfbY3s/WDWCBxPn1MjT9ctYxhOCL/HdSKjFqpz1BJrQzSWOBMb5jQ88V46ousJam\nBKeNMhrLqfE1WTRmDZqplqkCgYEAoE9t07BIcaMT1f5MpPQzk5Anffw8kIG1Uodw\njZw55tpnytfVgelSZe0RXq0lv/Xaew1rIWdTaQoecZaIiFjuaCXVVfI4HEGwGABV\nnJZaRa0mLpT04RsaOct1epSNRWMX4hQG6TZzBKmq1MUhy6Qbmk5nZqeVlypYYpVi\n0tAU8YkCgYAZo1Z4aPCzx9SPDTmD7yiD/tyA0QhRDJMAMVIdS7vy/DOe8vzhffdq\nF/RHjiGRwwynvI6lDOkzye1MXv84EZFoxEbaW4DBKl//LuIKiCN4PtLBRriNeqAZ\nqJXRXcrxawTuKLK2RweB9JSYqA9JuEAAx5+sagMETCSDfpnNTcO8fw==\n-----END RSA PRIVATE KEY-----\n",
