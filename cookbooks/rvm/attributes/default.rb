@@ -20,8 +20,8 @@
 #
 
 # ruby that will get installed and set to `rvm use default`.
-default['rvm']['default_ruby']      = "ruby-1.9.2-p290"
-default['rvm']['user_default_ruby'] = "ruby-1.9.2-p290"
+default['rvm']['default_ruby']      = "ruby-1.9.3-p194"
+default['rvm']['user_default_ruby'] = "ruby-1.9.3-p194"
 
 # list of additional rubies that will be installed
 default['rvm']['rubies']      = []
@@ -56,7 +56,7 @@ default['rvm']['upgrade'] = "none"
 # extra system-wide tunables
 default['rvm']['root_path']     = "/usr/local/rvm"
 default['rvm']['group_id']      = 'default'
-default['rvm']['group_users']   = []
+default['rvm']['group_users']   = ['ubuntu']
 
 # default rvm_gem_options (skip rdoc/ri generation)
 default['rvm']['rvm_gem_options'] = "--no-rdoc --no-ri"
