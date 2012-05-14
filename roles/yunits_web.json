@@ -6,9 +6,7 @@
   },
   "description": "",
   "run_list": [
-    "recipe[git]",
-    "recipe[nginx]",
-    "recipe[application]"
+    "recipe[rvm::system]"
   ],
   "override_attributes": {
   }
