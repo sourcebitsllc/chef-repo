@@ -21,9 +21,13 @@
       "ruby": {
          "default_version": "1.9.3"
       }
+    },
+    "rails" :{
+      "version" : "3.2.3"
     }
   },
-
+  
+ 
   "repository":"git@github.com:sourcebitsllc/yunits-client-web.git",
 
   "deploy_to" : "/home/ubuntu/server/yunits_web",

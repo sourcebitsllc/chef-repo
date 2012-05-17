@@ -6,7 +6,6 @@
   },
   "description": "",
   "run_list": [
-    "recipe[rvm::system]",
     "recipe[git]",
     "recipe[nginx]",
     "recipe[application]"

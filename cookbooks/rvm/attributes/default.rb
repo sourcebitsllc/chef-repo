@@ -56,7 +56,7 @@ default['rvm']['upgrade'] = "none"
 # extra system-wide tunables
 default['rvm']['root_path']     = "/usr/local/rvm"
 default['rvm']['group_id']      = 'default'
-default['rvm']['group_users']   = ['ubuntu']
+default['rvm']['group_users']   = []
 
 # default rvm_gem_options (skip rdoc/ri generation)
 default['rvm']['rvm_gem_options'] = "--no-rdoc --no-ri"
