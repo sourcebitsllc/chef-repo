@@ -8,7 +8,7 @@
             ]
   },
 
-  "api_server_url":"http://kosmos-api-dev.sourcebits.com:4567",
+  "api_server_url":"http://kosmos-api-dev.sourcebits.com",
 
   "rails_port" : "3000",
 
