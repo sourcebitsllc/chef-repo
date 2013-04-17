@@ -39,4 +39,6 @@ http {
 
   include <%= node[:nginx][:dir] %>/conf.d/*.conf;
   include <%= node[:nginx][:dir] %>/sites-enabled/*;
+
+  client_max_body_size 10m;
 }

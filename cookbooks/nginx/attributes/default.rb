@@ -29,12 +29,14 @@ when "debian","ubuntu"
   default[:nginx][:user]       = "www-data"
   default[:nginx][:binary]     = "/usr/sbin/nginx"
   default[:nginx][:init_style] = "runit"
+  default[:nginx][:ssl_certificate_dir]        = "/etc/nginx/ssl_certificate"
 else
   default[:nginx][:dir]        = "/etc/nginx"
   default[:nginx][:log_dir]    = "/var/log/nginx"
   default[:nginx][:user]       = "www-data"
   default[:nginx][:binary]     = "/usr/sbin/nginx"
   default[:nginx][:init_style] = "init"
+  default[:nginx][:ssl_certificate_dir]        = "/etc/nginx/ssl_certificate"
 end
 
 default[:nginx][:pid] = "/var/run/nginx.pid"
