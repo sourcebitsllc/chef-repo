@@ -3,7 +3,12 @@ upstream kosmos {
 }
 server {
   listen   80;
+  listen   443 ssl;
+
   server_name  <%= node[:hostname] %>;
+
+  ssl_certificate <%= node[:nginx][:ssl_certificate_dir] %>/kosmos-dev.sourcebits.com.crt;
+  ssl_certificate_key <%= node[:nginx][:ssl_certificate_dir] %>/kosmos-dev.sourcebits.com.key;
 
   access_log  <%= node[:nginx][:log_dir] %>/localhost.access.log;
   root /home/ubuntu/server/yunits_web/current/public;
